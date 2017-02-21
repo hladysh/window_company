@@ -1,0 +1,73 @@
+/* Large desktops and laptops */
+
+@media (min-width: 1200px) {
+	#achievement {
+		background-position: -150px 0;
+	}
+}
+
+/* Portrait tablets and medium desktops */
+
+@media (max-width: 1199px) {
+	.section_h2 {
+		margin: 60px 0 50px 0;
+	}
+	.achievement_item {
+		width: 23%;
+		margin-right: 2.6%;
+	}
+	.achievement_item h5 {
+		text-align: center;
+	}
+	#advantages {
+		background-position: -322px 227px;
+	}
+	.part_margin {
+		margin-top: 28px;
+	}
+	.advantages_icon {
+		margin-bottom: 15px;
+	}
+	#advantages p {
+		padding: 0 5px;
+		line-height: 18px;
+	}
+	#about .about_slider_right .slick-dots {
+		right: 6%;
+	}
+	.content_right_left_col {
+		padding: 15px;
+	}
+	.content_right_left_col p {
+		margin-bottom: 15px;
+	}
+	.footer_nav {
+		margin: 40px 10px 20px 10px;
+	}
+}
+
+
+/* Portrait tablets and small desktops */
+
+@media (max-width: 991px) {
+	#advantages {
+		background-repeat-x: initial;
+	}
+}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+
+/* Landscape phones and smaller */
+
+@media (max-width: 480px) {}
+
+@media (max-width: 650) {}
