@@ -63,6 +63,10 @@ header
     vertical-align: middle;
 }
 
+.languages_small {
+    display: none;
+}
+
 .circle {
     color: #fff;
     width: 38px;
@@ -153,6 +157,10 @@ nav
     background: url(../img/section_line.png) repeat-x;
 }
 
+#nav_toggle {
+    display: none;
+}
+
 #nav {
     text-align: justify;
 }
@@ -172,6 +180,10 @@ nav
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+#navigation li .active {
+    color: #009ade;
 }
 
 #nav ul li a:hover {
@@ -414,9 +426,9 @@ achievement
 
 #achievement {
     min-height: 300px;
-    background: -webkit-linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_achievement.jpg) no-repeat;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_achievement.jpg) no-repeat;
-    background-position: -435px 0;
+    background: -webkit-linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg_achievement.png) no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg_achievement.png) no-repeat;
+    background-position: -500px -430px;
 }
 
 .achievement_item {
@@ -622,12 +634,14 @@ about
 .about_slider_right {
     position: relative;
     margin: 25px 0;
-    /*float: left;*/
+    padding-bottom: 30px;
+    overflow: hidden;
 }
 
 #about .about_slider_right .slick-dots {
-    text-align: right;
-    right: 10%;
+    text-align: center;
+    right: 7%;
+    bottom: -9px;
 }
 
 .content_right_left_col i {
@@ -782,8 +796,11 @@ map
 
 .map_content .select_city:hover,
 .map_content .select_city:focus {
+    color: #fff;
     border: none;
     outline: none;
+    background-color: #0b88bf;
+    transition: 0.5s;
 }
 
 
@@ -988,6 +1005,11 @@ footer
 .contact_item .phone {
     font-size: 14px;
     font-weight: 700;
+}
+
+.copyright_wrap {
+    width: 100%;
+    clear: both;
 }
 
 .copyright {

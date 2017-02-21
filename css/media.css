@@ -1,16 +1,18 @@
 /* Large desktops and laptops */
 
-@media (min-width: 1200px) {
-	#achievement {
-		background-position: -150px 0;
-	}
-}
+@media (min-width: 1200px) {}
+
+
+
 
 /* Portrait tablets and medium desktops */
 
 @media (max-width: 1199px) {
 	.section_h2 {
 		margin: 60px 0 50px 0;
+	}
+	.news_item_wrap img {
+		min-height: 170px;
 	}
 	.achievement_item {
 		width: 23%;
@@ -50,8 +52,54 @@
 /* Portrait tablets and small desktops */
 
 @media (max-width: 991px) {
+	.header_contact {
+		display: block;
+	}
+	.header_contact .adress_text {
+		margin-right: 40px;
+	}
+	.news_item_wrap h3,
+	.tegs_wrap {
+		min-height: 45px;
+	}
+	.news_item_wrap p {
+		padding: 0;
+		margin-top: 15px;
+		min-height: 90px;
+	}
 	#advantages {
-		background-repeat-x: initial;
+		background: url(../img/bg_advantages.png) repeat-y;
+		background-position: -409px 227px;
+	}
+	.news_item_wrap img {
+		min-height: 125px;
+	}
+	.achievement_item {
+		width: 48%;
+		min-height: 200px margin-right: 4%;
+		margin-top: 20px;
+	}
+	.achievement_item:nth-child(2) {
+		margin-right: 0;
+	}
+	.about_content_right {
+		width: 70%;
+	}
+	.footer_nav_wrap,
+	.footer_form_wrap {
+		width: 50%;
+	}
+	.contact_information {
+		padding: 0px;
+		padding: 49px 0px;
+	}
+	.contact_item {
+		width: 33.33%;
+		float: left;
+		margin-bottom: 50px;
+	}
+	.contact_information_wrap {
+		width: 100%;
 	}
 }
 
@@ -63,11 +111,189 @@
 		margin-left: 0px;
 		margin-right: 0px;
 	}
+	.left_content_wrap {
+		width: 90%;
+	}
+	.right_content {
+		width: 10%;
+	}
+	#header,
+	.left_content,
+	.right_content {
+		height: 135px;
+	}
+	.header_contact {
+		margin: 18px 0;
+	}
+	.languages {
+		display: block;
+	}
+	.languages a {
+		display: block;
+		margin: 0 auto;
+		margin-top: 1px;
+		padding: 4px;
+		height: 25px;
+		width: 25px;
+		line-height: 14px;
+	}
+	.left_content:before {
+		border-bottom: 135px solid #009ade;
+	}
+	.right_content:before {
+		display: none;
+	}
+	.header_contact .adress_text {
+		padding-right: 0px;
+	}
+	.header_contact .adress_text {
+		margin-right: 5px;
+	}
+	.navigation_wrap {
+		min-height: 70px;
+	}
+	#nav #navigation {
+		display: none;
+		text-align: center;
+		margin-top: 10px;
+	}
+	#nav #navigation li {
+		display: block;
+	}
+	#nav #navigation li:first-child {
+		padding-top: 50px;
+	}
+	#nav #navigation li a {
+		padding: 10px 0 0px;
+	}
+	#nav_toggle {
+		display: block;
+		position: absolute;
+		/ cursor: pointer;
+		right: 0;
+		padding: 20px 35px 0px 0px;
+		margin: 15px 0;
+		z-index: 999;
+	}
+	#nav_toggle.active span {
+		background-color: transparent;
+	}
+	#nav_toggle.active span:before,
+	#nav_toggle.active span:after {
+		top: 0;
+	}
+	#nav_toggle.active span:before {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+	}
+	#nav_toggle.active span:after {
+		transform: translateY(-10px) rotate(-45deg);
+		-webkit-transform: translateY(-10px) rotate(-45deg);
+		-ms-transform: translateY(-10px) rotate(-45deg);
+		top: 10px;
+	}
+	#nav_toggle {
+		position: absolute;
+		right: 2rem;
+		top: 1.5rem;
+		cursor: pointer;
+		padding: 0px 33px 10px 0px;
+	}
+	#nav_toggle span,
+	#nav_toggle span:before,
+	#nav_toggle span:after {
+		content: '';
+		display: block;
+		border-radius: 2px;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-o-border-radius: 21px;
+		height: 4px;
+		width: 30px;
+		background: #404040;
+		position: absolute;
+		cursor: pointer;
+		transition: all 500ms ease-in-out;
+		-webkit-transition: all 500ms ease-in-out;
+		-moz-transition: all 500ms ease-in-out;
+		-o-transition: all 500ms ease-in-out;
+	}
+	#nav_toggle span:before {
+		top: -10px;
+	}
+	#nav_toggle span:after {
+		bottom: -10px;
+	}
+	#nav_toggle span,
+	#nav_toggle span:before,
+	#nav_toggle span:after {}
+	.section_h2 {
+		margin: 20px 0 50px 0;
+	}
+	.news_item_wrap img {
+		min-height: 193px;
+	}
+	#achievement {
+		background-position: -416px 0;
+	}
+	.achievement_item,
+	#about .slick-dots {
+		text-align: center;
+	}
+	.achievement_item h5:before {
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.about_slider_left,
+	.about_content_right {
+		position: relative;
+		width: 100%;
+		margin: 20px 0 50px 0;
+		border: 1px solid red;
+	}
+	.about_slider_left .slick-slide img {
+		width: 100%;
+	}
+	.map_content h3 {
+		font-size: 20px;
+	}
 }
 
 
-/* Landscape phones and smaller */
+/*	.slick-dotted.slick-slider {
+		margin-bottom: 10px;
+	}*/
 
-@media (max-width: 480px) {}
+@media (max-width: 640px) {
+	.achievement_item {}
+	.map_content h3 {
+		font-size: 18px;
+	}
+}
 
-@media (max-width: 650) {}
+@media (max-width: 480px) {
+	.col-xs-6 {
+		width: 100%;
+	}
+	.header_contact .adress_text {
+		font-size: 12px;
+	}
+	.left_content:before {
+		display: none;
+	}
+	.circle {
+		margin-right: 2px;
+	}
+	.left_content_wrap {
+		background-color: #009ade;
+	}
+	.left_content {
+		float: none;
+		margin: 0 auto;
+	}
+	.header_contact .adress_text {
+		margin-right: 0;
+	}
+}

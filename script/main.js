@@ -1,4 +1,20 @@
 $(document).ready(function() {
+
+    $("#nav_toggle").click(function() {
+        $(this).toggleClass("active");
+        $('#nav #navigation ').slideToggle();
+    });
+
+
+    $('#navigation li a').click(function() {
+        $('#navigation li a').removeClass('active');
+        // $(this).addClass('active');
+        // $('#nav_toggle ').removeClass('active');
+        // $('#nav #navigation ').slideToggle();
+        $(this).addClass('active');
+    })
+
+
     var filtered = false;
     $('.list_item').on('click', function() {
         var filtername = $(this).attr('id');
@@ -45,7 +61,7 @@ $(document).ready(function() {
                 dots: true
             }
         }, {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
@@ -85,21 +101,14 @@ $(document).ready(function() {
         slidesToShow: 2,
         slidesToScroll: 2,
         responsive: [{
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-                dots: true
-            }
-        }, {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true
             }
+
         }]
     });
 
