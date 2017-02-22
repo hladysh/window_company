@@ -273,7 +273,6 @@ news
 
 .section_h2 {
     color: #4d4c4c;
-    /*    padding: 20px 10px;*/
     margin: 90px 0 50px 0;
     font-size: 28px;
     font-weight: 700;
@@ -300,7 +299,6 @@ news
 
 .news_item ul li {
     display: inline-block;
-    margin-right: 20px;
     margin: 0 auto;
 }
 
@@ -319,11 +317,6 @@ news
 #news_category .active {
     color: #8cb623;
 }
-
-
-/*#news_category  .active {
-    color: red;
-}*/
 
 .news_item_wrap {
     color: #4d4c4c;
@@ -501,7 +494,6 @@ achievement
 }
 
 .achievement_item:nth-child(odd) h5:before {
-    /*    color: #fff;*/
     background-position: 0px -213px;
 }
 
@@ -640,8 +632,11 @@ about
 
 #about .about_slider_right .slick-dots {
     text-align: center;
-    right: 7%;
     bottom: -9px;
+}
+
+.slick-slide img {
+    margin: 0 auto;
 }
 
 .content_right_left_col i {
@@ -677,7 +672,6 @@ review
 
 .review_slider {
     min-height: 400px;
-    /*width: 100px;*/
 }
 
 .review_item {
@@ -717,7 +711,6 @@ review
 
 .icon_quote {
     float: left;
-    /*    display: inline-block;*/
     width: 35px;
     height: 35px;
     background: url(../img/sprits.png) no-repeat;
@@ -752,9 +745,6 @@ map
 ========================================================================== */
 
 #maps {
-    /*    width: 100%;
-    height: 300px;
-    display: block;*/
     position: relative;
 }
 
@@ -767,9 +757,7 @@ map
 .map_content {
     position: absolute;
     top: 27%;
-    left: 50%;
-    width: 710px;
-    margin-left: -355px;
+    width: 100%;
     text-align: center;
 }
 
@@ -818,7 +806,6 @@ footer
 .footer_form_wrap,
 .contact_information_wrap {
     display: inline-block;
-    /*border: 1px solid red;*/
     float: left;
 }
 
@@ -880,13 +867,9 @@ footer
 #footer_form {
     position: absolute;
     top: -33px;
-    /*left: 50%;*/
     padding: 30px;
-    /*margin-left: -200px;*/
-    /*width: 400px;*/
     width: 100%;
     height: 415px;
-    /*display: inline-block;*/
     text-align: center;
     background-color: #fff;
 }
@@ -956,7 +939,6 @@ footer
 
 #footer_form input[type="submit"] {
     color: #009ade;
-    /*display: block;*/
     margin: 30px 0;
     padding: 18px 30px;
     font-size: 14px;
